@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "seed": 42,
+    "B": 2000,
+    "alpha": 0.1,
+    "excluded_wells_nat": 337,
+    "excluded_wells_igp": 77,
+    "numpy": "2.4.6",
+    "pandas": "3.0.3"
+  },
+  "cells": {
+    "national_h1": {
+      "base_rate": 0.08129961775948251,
+      "n_pos": 1106,
+      "n_neg": 12498,
+      "best_model_bss": "lstm",
+      "best_model_auc": "random_forest",
+      "brier_mcs_set": [
+        "gru",
+        "lstm"
+      ]
+    },
+    "national_h2": {
+      "base_rate": 0.09113841647001383,
+      "n_pos": 1120,
+      "n_neg": 11169,
+      "best_model_bss": "random_forest",
+      "best_model_auc": "random_forest",
+      "brier_mcs_set": [
+        "chronos",
+        "gru",
+        "lstm",
+        "random_forest",
+        "xgboost"
+      ]
+    },
+    "national_h3": {
+      "base_rate": 0.08624324076619924,
+      "n_pos": 941,
+      "n_neg": 9970,
+      "best_model_bss": "random_forest",
+      "best_model_auc": "random_forest",
+      "brier_mcs_set": [
+        "chronos",
+        "gru",
+        "random_forest",
+        "xgboost"
+      ]
+    },
+    "national_h4": {
+      "base_rate": 0.08675107530138729,
+      "n_pos": 1432,
+      "n_neg": 15075,
+      "best_model_bss": "chronos",
+      "best_model_auc": "random_forest",
+      "brier_mcs_set": [
+        "chronos",
+        "lstm",
+        "random_forest",
+        "xgboost"
+      ]
+    },
+    "igp_h1": {
+      "base_rate": 0.2854100106496273,
+      "n_pos": 268,
+      "n_neg": 671,
+      "best_model_bss": "gru",
+      "best_model_auc": "chronos",
+      "brier_mcs_set": [
+        "chronos",
+        "gru",
+        "lstm",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ]
+    },
+    "igp_h2": {
+      "base_rate": 0.31113423517169614,
+      "n_pos": 299,
+      "n_neg": 662,
+      "best_model_bss": "random_forest",
+      "best_model_auc": "random_forest",
+      "brier_mcs_set": [
+        "chronos",
+        "gru",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ]
+    },
+    "igp_h3": {
+      "base_rate": 0.35309278350515466,
+      "n_pos": 274,
+      "n_neg": 502,
+      "best_model_bss": "random_forest",
+      "best_model_auc": "random_forest",
+      "brier_mcs_set": [
+        "chronos",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ]
+    },
+    "igp_h4": {
+      "base_rate": 0.3082583810302535,
+      "n_pos": 377,
+      "n_neg": 846,
+      "best_model_bss": "chronos",
+      "best_model_auc": "random_forest",
+      "brier_mcs_set": [
+        "chronos",
+        "persistence",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ]
+    }
+  },
+  "acceptance_checks_passed": true
+}

@@ -1,0 +1,284 @@
+{
+  "metadata": {
+    "B": 2000,
+    "alpha": 0.1,
+    "seed": 42,
+    "numpy": "2.4.6",
+    "pandas": "3.0.3"
+  },
+  "mcs_sets": {
+    "national_h1_se": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "gru",
+        "lstm",
+        "random_forest",
+        "xgboost"
+      ],
+      "size": 5,
+      "best_model": "random_forest",
+      "elim_order": [
+        "climatology",
+        "persistence",
+        "seasonal_naive"
+      ]
+    },
+    "national_h1_crps": {
+      "alpha": 0.1,
+      "set": [
+        "random_forest",
+        "xgboost"
+      ],
+      "size": 2,
+      "best_model": "xgboost",
+      "elim_order": [
+        "persistence",
+        "climatology",
+        "seasonal_naive",
+        "lstm",
+        "chronos",
+        "gru"
+      ]
+    },
+    "national_h2_se": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "gru",
+        "random_forest",
+        "xgboost"
+      ],
+      "size": 4,
+      "best_model": "random_forest",
+      "elim_order": [
+        "persistence",
+        "climatology",
+        "seasonal_naive",
+        "lstm"
+      ]
+    },
+    "national_h2_crps": {
+      "alpha": 0.1,
+      "set": [
+        "random_forest"
+      ],
+      "size": 1,
+      "best_model": "random_forest",
+      "elim_order": [
+        "persistence",
+        "climatology",
+        "seasonal_naive",
+        "lstm",
+        "chronos",
+        "gru",
+        "xgboost"
+      ]
+    },
+    "national_h3_se": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "gru",
+        "random_forest",
+        "xgboost"
+      ],
+      "size": 4,
+      "best_model": "random_forest",
+      "elim_order": [
+        "climatology",
+        "persistence",
+        "lstm",
+        "seasonal_naive"
+      ]
+    },
+    "national_h3_crps": {
+      "alpha": 0.1,
+      "set": [
+        "random_forest"
+      ],
+      "size": 1,
+      "best_model": "random_forest",
+      "elim_order": [
+        "persistence",
+        "climatology",
+        "lstm",
+        "seasonal_naive",
+        "gru",
+        "chronos",
+        "xgboost"
+      ]
+    },
+    "national_h4_se": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "gru",
+        "lstm",
+        "persistence",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ],
+      "size": 7,
+      "best_model": "random_forest",
+      "elim_order": [
+        "climatology"
+      ]
+    },
+    "national_h4_crps": {
+      "alpha": 0.1,
+      "set": [
+        "random_forest"
+      ],
+      "size": 1,
+      "best_model": "random_forest",
+      "elim_order": [
+        "climatology",
+        "lstm",
+        "persistence",
+        "seasonal_naive",
+        "gru",
+        "chronos",
+        "xgboost"
+      ]
+    },
+    "igp_h1_se": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "gru",
+        "lstm",
+        "persistence",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ],
+      "size": 7,
+      "best_model": "gru",
+      "elim_order": [
+        "climatology"
+      ]
+    },
+    "igp_h1_crps": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "gru",
+        "lstm",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ],
+      "size": 6,
+      "best_model": "gru",
+      "elim_order": [
+        "climatology",
+        "persistence"
+      ]
+    },
+    "igp_h2_se": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "gru",
+        "lstm",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ],
+      "size": 6,
+      "best_model": "random_forest",
+      "elim_order": [
+        "climatology",
+        "persistence"
+      ]
+    },
+    "igp_h2_crps": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ],
+      "size": 4,
+      "best_model": "random_forest",
+      "elim_order": [
+        "climatology",
+        "persistence",
+        "lstm",
+        "gru"
+      ]
+    },
+    "igp_h3_se": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "gru",
+        "lstm",
+        "persistence",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ],
+      "size": 7,
+      "best_model": "chronos",
+      "elim_order": [
+        "climatology"
+      ]
+    },
+    "igp_h3_crps": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ],
+      "size": 4,
+      "best_model": "chronos",
+      "elim_order": [
+        "climatology",
+        "gru",
+        "lstm",
+        "persistence"
+      ]
+    },
+    "igp_h4_se": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "lstm",
+        "persistence",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ],
+      "size": 6,
+      "best_model": "chronos",
+      "elim_order": [
+        "climatology",
+        "gru"
+      ]
+    },
+    "igp_h4_crps": {
+      "alpha": 0.1,
+      "set": [
+        "chronos",
+        "persistence",
+        "random_forest",
+        "seasonal_naive",
+        "xgboost"
+      ],
+      "size": 5,
+      "best_model": "chronos",
+      "elim_order": [
+        "climatology",
+        "gru",
+        "lstm"
+      ]
+    }
+  },
+  "acceptance_checks_passed": true
+}

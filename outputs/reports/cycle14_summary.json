@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "matplotlib": "3.11.0"
+  },
+  "tercile_cutoffs": {
+    "q33": 18.0,
+    "q67": 58.0
+  },
+  "scale_floored_rows": 8240,
+  "global_median_positive_scale": 1.2723529411764707,
+  "acceptance_checks_passed": true
+}
