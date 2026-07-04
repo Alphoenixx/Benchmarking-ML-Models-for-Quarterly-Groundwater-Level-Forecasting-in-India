@@ -1,0 +1,76 @@
+{
+  "columns": [
+    "time_idx",
+    "station_id",
+    "datetime",
+    "target",
+    "rainfall",
+    "t  kmnpnn]2m",
+    "t2m_max",
+    "t2m_min",
+    "month",
+    "latitude",
+    "longitude",
+    "wellDepth",
+    "wellAquiferType_encoded",
+    "State_encoded",
+    "District_encoded"
+  ],
+  "unparseable_dates": 0,
+  "target_stats": {
+    "min": -2014.79,
+    "p05": -26.851899999999993,
+    "median": 2.37,
+    "mean": -0.2378296369556903,
+    "p95": 19.27,
+    "max": 2430.87
+  },
+  "state_decode": {
+    "0": {
+      "guess": "Andhra Pradesh",
+      "centroid": [
+        16.351,
+        80.357
+      ],
+      "rows": 16496
+    },
+    "1": {
+      "guess": "Madhya Pradesh",
+      "centroid": [
+        21.746,
+        79.038
+      ],
+      "rows": 400456
+    }
+  },
+  "region_bbox": {
+    "lat_min": 27.5,
+    "lat_max": 32.5,
+    "lon_min": 73.5,
+    "lon_max": 81.0
+  },
+  "region_rows": 51513,
+  "region_wells": 975,
+  "region_cohort_grid": {
+    "rows>=180&span>=365d": 19,
+    "rows>=180&span>=730d": 2,
+    "rows>=180&span>=1095d": 0,
+    "rows>=365&span>=365d": 8,
+    "rows>=365&span>=730d": 1,
+    "rows>=365&span>=1095d": 0,
+    "rows>=730&span>=365d": 0,
+    "rows>=730&span>=730d": 0,
+    "rows>=730&span>=1095d": 0,
+    "rows>=1095&span>=365d": 0,
+    "rows>=1095&span>=730d": 0,
+    "rows>=1095&span>=1095d": 0
+  },
+  "region_monthly_points": {
+    "median": 14.0,
+    "p90": 84.0,
+    "max": 115,
+    "wells_ge_24mo": 366,
+    "wells_ge_36mo": 275
+  },
+  "region_depletion_slope_m_per_yr": -0.15574406348900663
+}

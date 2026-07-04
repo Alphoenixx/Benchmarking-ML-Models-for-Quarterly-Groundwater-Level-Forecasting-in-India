@@ -1,0 +1,1068 @@
+{
+  "n_shap_target": 4000,
+  "horizons": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "per_model": [
+    {
+      "model": "rf",
+      "h": 1,
+      "region": "national",
+      "n_rows": 4000,
+      "family_shares": {
+        "autoregressive": 0.7834180254820015,
+        "seasonal": 0.12343821283952058,
+        "covariate": 0.05882032576047719,
+        "static": 0.03432343591800078,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 4.341982072299576,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.5876574420668944,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_lag3",
+          "mean_abs_shap": 0.3257823054394572,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.23084119077363097,
+          "family": "seasonal"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.13792392768371792,
+          "family": "static"
+        },
+        {
+          "feature": "t2m_min_lag0",
+          "mean_abs_shap": 0.12113304577983346,
+          "family": "covariate"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.09655346317711132,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.08593712295487169,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.08275480766998268,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.06841301128445303,
+          "family": "static"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.9674809083093104
+    },
+    {
+      "model": "rf",
+      "h": 1,
+      "region": "igp",
+      "n_rows": 1304,
+      "family_shares": {
+        "autoregressive": 0.87529573084343,
+        "seasonal": 0.06185858413835422,
+        "covariate": 0.03465830409745733,
+        "static": 0.028187380920758464,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 9.053163991080527,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.512987132337117,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_lag3",
+          "mean_abs_shap": 0.2780188545654128,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.1903974017007246,
+          "family": "seasonal"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.15345115729529404,
+          "family": "static"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.14088595252310557,
+          "family": "static"
+        },
+        {
+          "feature": "t2m_min_lag0",
+          "mean_abs_shap": 0.1312607394499436,
+          "family": "covariate"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 0.11849284880396661,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.10011804369262603,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.0868107207645698,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.9792646538208667
+    },
+    {
+      "model": "rf",
+      "h": 2,
+      "region": "national",
+      "n_rows": 4000,
+      "family_shares": {
+        "autoregressive": 0.8179879725335124,
+        "seasonal": 0.0909959115084804,
+        "static": 0.04856229630530418,
+        "covariate": 0.04245381965270301,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 3.577466194042608,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag2",
+          "mean_abs_shap": 0.9556711227880348,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.4914862383578896,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.4599052563760639,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.19213526817680554,
+          "family": "static"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.09962837380934661,
+          "family": "seasonal"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.09067975423520905,
+          "family": "static"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.07595030704221033,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.07545968634372725,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag5",
+          "mean_abs_shap": 0.05131285448255685,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.9740555302685481
+    },
+    {
+      "model": "rf",
+      "h": 2,
+      "region": "igp",
+      "n_rows": 1284,
+      "family_shares": {
+        "autoregressive": 0.8918173098075144,
+        "seasonal": 0.041290828647592294,
+        "static": 0.04019740531833951,
+        "covariate": 0.026694456226553785,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 7.96438605097427,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag2",
+          "mean_abs_shap": 1.2017567085921894,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.6290796962221408,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.39169660716956883,
+          "family": "seasonal"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.2253004834965559,
+          "family": "static"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.19930075818368803,
+          "family": "static"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.07991664766592087,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.07927645267552594,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.07839404057781907,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag5",
+          "mean_abs_shap": 0.07480306368807138,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.9836140191169777
+    },
+    {
+      "model": "rf",
+      "h": 3,
+      "region": "national",
+      "n_rows": 4000,
+      "family_shares": {
+        "autoregressive": 0.8436191214605528,
+        "static": 0.05433685674038903,
+        "seasonal": 0.05178199536942486,
+        "covariate": 0.050262026429633254,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 3.380184741268104,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 1.0218503955981069,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag5",
+          "mean_abs_shap": 0.4962227827286564,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.31801328689135816,
+          "family": "seasonal"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.22820959544390554,
+          "family": "static"
+        },
+        {
+          "feature": "y_lag8",
+          "mean_abs_shap": 0.1225896301579675,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.08080914338551941,
+          "family": "static"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 0.06542390445781193,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.05751615364908356,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.04687556549992635,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.9747129924644717
+    },
+    {
+      "model": "rf",
+      "h": 3,
+      "region": "igp",
+      "n_rows": 1082,
+      "family_shares": {
+        "autoregressive": 0.8955624117574711,
+        "static": 0.04675986846306789,
+        "covariate": 0.03282444313449691,
+        "seasonal": 0.024853276644964194,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 7.456938256379902,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 1.239671767835367,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag5",
+          "mean_abs_shap": 0.703396190900945,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.2911264962187438,
+          "family": "static"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.26843408852594136,
+          "family": "seasonal"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.18620803422088691,
+          "family": "static"
+        },
+        {
+          "feature": "y_lag8",
+          "mean_abs_shap": 0.14967580877548783,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 0.09430520421826241,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.07003649892666625,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.04614984126673654,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.9865978860061698
+    },
+    {
+      "model": "rf",
+      "h": 4,
+      "region": "national",
+      "n_rows": 4000,
+      "family_shares": {
+        "autoregressive": 0.866305663699308,
+        "static": 0.04660509836929572,
+        "seasonal": 0.04482104894410466,
+        "covariate": 0.04226818898729168,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 3.807357545588353,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 0.6801321048878122,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag8",
+          "mean_abs_shap": 0.45339212682480257,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.2214237826821915,
+          "family": "seasonal"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.198498731834671,
+          "family": "static"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.16181441429725182,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag2",
+          "mean_abs_shap": 0.08113674980884636,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_roll4_std",
+          "mean_abs_shap": 0.06953573466894598,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.06390049999573186,
+          "family": "static"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.057356685961213565,
+          "family": "seasonal"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.9710210893642844
+    },
+    {
+      "model": "rf",
+      "h": 4,
+      "region": "igp",
+      "n_rows": 1239,
+      "family_shares": {
+        "autoregressive": 0.9160459480293169,
+        "static": 0.03903936298186575,
+        "covariate": 0.026261012629129124,
+        "seasonal": 0.018653676359688193,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 8.132353148834571,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 1.038346677127974,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag8",
+          "mean_abs_shap": 0.4584591293860252,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.24603708784667186,
+          "family": "static"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.16130231228142128,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.15050674240741257,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.13535811053548436,
+          "family": "static"
+        },
+        {
+          "feature": "y_roll4_std",
+          "mean_abs_shap": 0.070219695845608,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag2",
+          "mean_abs_shap": 0.06864680044660729,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag5",
+          "mean_abs_shap": 0.06838747652448816,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.9769888231426692
+    },
+    {
+      "model": "xgb",
+      "h": 1,
+      "region": "national",
+      "n_rows": 4000,
+      "family_shares": {
+        "autoregressive": 0.7230734887011987,
+        "covariate": 0.11011593898675334,
+        "seasonal": 0.09712927832669299,
+        "static": 0.06968129398535493,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 3.7044315338134766,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.367641806602478,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_lag3",
+          "mean_abs_shap": 0.3401777446269989,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.3240318298339844,
+          "family": "seasonal"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.28838592767715454,
+          "family": "static"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 0.25100046396255493,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.19340264797210693,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "t2m_min_lag0",
+          "mean_abs_shap": 0.1921325922012329,
+          "family": "covariate"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.13938359916210175,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.13843432068824768,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.901719146319592
+    },
+    {
+      "model": "xgb",
+      "h": 1,
+      "region": "igp",
+      "n_rows": 1304,
+      "family_shares": {
+        "autoregressive": 0.8083475666648348,
+        "covariate": 0.08851841134754572,
+        "static": 0.052537070103273215,
+        "seasonal": 0.05059695188434632,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 7.740550994873047,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag3",
+          "mean_abs_shap": 0.5308404564857483,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 0.36505353450775146,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.347387433052063,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.335917592048645,
+          "family": "static"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.32938164472579956,
+          "family": "seasonal"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.2969488799571991,
+          "family": "seasonal"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.2336694896221161,
+          "family": "static"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.22286400198936462,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "t2m_min_lag0",
+          "mean_abs_shap": 0.20798471570014954,
+          "family": "covariate"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.9013092157515821
+    },
+    {
+      "model": "xgb",
+      "h": 2,
+      "region": "national",
+      "n_rows": 4000,
+      "family_shares": {
+        "autoregressive": 0.7552887544249399,
+        "seasonal": 0.09269899349422224,
+        "covariate": 0.07699297866256337,
+        "static": 0.07501927341827445,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 3.2384750843048096,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag2",
+          "mean_abs_shap": 0.6722957491874695,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.5041662454605103,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.3577609062194824,
+          "family": "seasonal"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.3036341071128845,
+          "family": "static"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.26526883244514465,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.1513141244649887,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.13034287095069885,
+          "family": "static"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.11230022460222244,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag5",
+          "mean_abs_shap": 0.07754174619913101,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.8329314770164112
+    },
+    {
+      "model": "xgb",
+      "h": 2,
+      "region": "igp",
+      "n_rows": 1284,
+      "family_shares": {
+        "autoregressive": 0.837573238064735,
+        "covariate": 0.062980531838699,
+        "static": 0.05725044188319113,
+        "seasonal": 0.04219578821337479,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 7.107168674468994,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag2",
+          "mean_abs_shap": 0.9876423478126526,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.865172266960144,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.35804006457328796,
+          "family": "static"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.31022849678993225,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.29585933685302734,
+          "family": "seasonal"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.2576899528503418,
+          "family": "static"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.21366587281227112,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_lag5",
+          "mean_abs_shap": 0.16828227043151855,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag8",
+          "mean_abs_shap": 0.12961037456989288,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.8346944595680693
+    },
+    {
+      "model": "xgb",
+      "h": 3,
+      "region": "national",
+      "n_rows": 4000,
+      "family_shares": {
+        "autoregressive": 0.7392678519802635,
+        "covariate": 0.10049962851133833,
+        "static": 0.09351406698167444,
+        "seasonal": 0.06671845252672379,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 2.9782745838165283,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.6988499760627747,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag5",
+          "mean_abs_shap": 0.46891552209854126,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.4057515561580658,
+          "family": "static"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.3762260973453522,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_lag8",
+          "mean_abs_shap": 0.19426511228084564,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 0.13725537061691284,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.13393867015838623,
+          "family": "static"
+        },
+        {
+          "feature": "t2m_min_lag4",
+          "mean_abs_shap": 0.11758434772491455,
+          "family": "covariate"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.10645405948162079,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.8519604062218794
+    },
+    {
+      "model": "xgb",
+      "h": 3,
+      "region": "igp",
+      "n_rows": 1082,
+      "family_shares": {
+        "autoregressive": 0.8094996247099212,
+        "covariate": 0.08450723780029602,
+        "static": 0.07490434577898988,
+        "seasonal": 0.03108879171079287,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 6.465311050415039,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.9986737966537476,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag5",
+          "mean_abs_shap": 0.8479240536689758,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.5104333758354187,
+          "family": "static"
+        },
+        {
+          "feature": "y_lag8",
+          "mean_abs_shap": 0.4190879762172699,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.31808286905288696,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 0.3031710088253021,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.2952348291873932,
+          "family": "static"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.1891462653875351,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag3",
+          "mean_abs_shap": 0.16046828031539917,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.8544800102840981
+    },
+    {
+      "model": "xgb",
+      "h": 4,
+      "region": "national",
+      "n_rows": 4000,
+      "family_shares": {
+        "autoregressive": 0.794002165518407,
+        "covariate": 0.09106249014908498,
+        "static": 0.07324764975523133,
+        "seasonal": 0.04168769457727676,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 3.217524766921997,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 0.7361281514167786,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag8",
+          "mean_abs_shap": 0.5421889424324036,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.3390949070453644,
+          "family": "static"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.1975124329328537,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "sin_q",
+          "mean_abs_shap": 0.15614034235477448,
+          "family": "seasonal"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.13308249413967133,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "cos_q",
+          "mean_abs_shap": 0.12139346450567245,
+          "family": "seasonal"
+        },
+        {
+          "feature": "t2m_max_lag0",
+          "mean_abs_shap": 0.11489832401275635,
+          "family": "covariate"
+        },
+        {
+          "feature": "y_lag2",
+          "mean_abs_shap": 0.1007399931550026,
+          "family": "autoregressive"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.9124309037151305
+    },
+    {
+      "model": "xgb",
+      "h": 4,
+      "region": "igp",
+      "n_rows": 1239,
+      "family_shares": {
+        "autoregressive": 0.8560256603903302,
+        "covariate": 0.06933212040670042,
+        "static": 0.05673234451065776,
+        "seasonal": 0.017909874692311593,
+        "other": 0.0
+      },
+      "top10": [
+        {
+          "feature": "y_roll4_mean",
+          "mean_abs_shap": 6.786888122558594,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag4",
+          "mean_abs_shap": 1.3263373374938965,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag8",
+          "mean_abs_shap": 0.8487845659255981,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "wellDepth",
+          "mean_abs_shap": 0.4168768525123596,
+          "family": "static"
+        },
+        {
+          "feature": "y_lag1",
+          "mean_abs_shap": 0.3005825877189636,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_lag5",
+          "mean_abs_shap": 0.20819032192230225,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "y_trend4",
+          "mean_abs_shap": 0.20597560703754425,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "lat",
+          "mean_abs_shap": 0.167441263794899,
+          "family": "static"
+        },
+        {
+          "feature": "y_lag6",
+          "mean_abs_shap": 0.1514793485403061,
+          "family": "autoregressive"
+        },
+        {
+          "feature": "t2m_max_lag0",
+          "mean_abs_shap": 0.13434089720249176,
+          "family": "covariate"
+        }
+      ],
+      "spearman_shap_vs_builtin": 0.8953593006813215
+    }
+  ],
+  "elapsed_sec": 6749.7
+}

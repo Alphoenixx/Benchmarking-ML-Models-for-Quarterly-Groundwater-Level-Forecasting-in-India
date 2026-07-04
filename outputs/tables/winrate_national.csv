@@ -1,0 +1,17 @@
+h,model,win_rate_vs_seasonal,n_wells
+1,persistence,0.343,2824
+2,persistence,0.248,2739
+3,persistence,0.341,2695
+4,persistence,0.0,2913
+1,climatology,0.461,2824
+2,climatology,0.47,2739
+3,climatology,0.481,2695
+4,climatology,0.475,2913
+1,xgboost,0.666,2824
+2,xgboost,0.624,2739
+3,xgboost,0.615,2695
+4,xgboost,0.553,2913
+1,random_forest,0.661,2824
+2,random_forest,0.627,2739
+3,random_forest,0.635,2695
+4,random_forest,0.571,2913

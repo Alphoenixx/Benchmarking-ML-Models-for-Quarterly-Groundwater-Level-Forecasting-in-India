@@ -1,0 +1,168 @@
+04:43:10 | INFO | Logger started -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\logs\cycle8_20260704_044310.log
+04:43:10 | INFO | START cycle8 | device=cpu | torch=2.12.1+cpu
+04:43:10 | INFO | panel (248496, 12)
+04:43:10 | INFO | national wells=4060 | igp wells=423
+04:43:20 | INFO | building 6-model preds via run_cycle7.all_model_preds_long() ...
+04:52:02 | INFO | 6-model preds (756049, 8) built in 522.0s -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\tables\preds_6models_long.parquet
+04:52:02 | INFO | 6-model row counts:
+model
+chronos           103084
+climatology       161084
+persistence       121779
+random_forest     121779
+seasonal_naive    126544
+xgboost           121779
+04:52:33 | INFO | DL samples total=858727 | by split:
+split
+test      90684
+train    697254
+val       70789
+04:52:33 | INFO | DL n: train=697254 val=70789 test=90684
+04:52:33 | INFO | ===== training LSTM =====
+04:53:35 | INFO | [lstm] epoch 01 val_rmse=2.8617
+04:54:35 | INFO | [lstm] epoch 02 val_rmse=2.8187
+04:55:35 | INFO | [lstm] epoch 03 val_rmse=2.8216
+04:56:36 | INFO | [lstm] epoch 04 val_rmse=2.7985
+04:57:36 | INFO | [lstm] epoch 05 val_rmse=2.7953
+04:58:36 | INFO | [lstm] epoch 06 val_rmse=2.7811
+04:59:37 | INFO | [lstm] epoch 07 val_rmse=2.7732
+05:00:38 | INFO | [lstm] epoch 08 val_rmse=2.7823
+05:01:38 | INFO | [lstm] epoch 09 val_rmse=2.7675
+05:02:39 | INFO | [lstm] epoch 10 val_rmse=2.7483
+05:03:39 | INFO | [lstm] epoch 11 val_rmse=2.7618
+05:04:39 | INFO | [lstm] epoch 12 val_rmse=2.8084
+05:05:42 | INFO | [lstm] epoch 13 val_rmse=2.7855
+05:06:44 | INFO | [lstm] epoch 14 val_rmse=2.7932
+05:07:46 | INFO | [lstm] epoch 15 val_rmse=2.7889
+05:08:47 | INFO | [lstm] epoch 16 val_rmse=2.7910
+05:09:48 | INFO | [lstm] epoch 17 val_rmse=2.7973
+05:10:49 | INFO | [lstm] epoch 18 val_rmse=2.7924
+05:10:49 | INFO | [lstm] early stop @ ep 18 (best=2.7483)
+05:10:49 | INFO | lstm trained in 1096.1s | best_val_rmse=2.7483
+05:10:52 | INFO | ===== training GRU =====
+05:12:13 | INFO | [gru] epoch 01 val_rmse=2.8482
+05:13:33 | INFO | [gru] epoch 02 val_rmse=2.7733
+05:14:54 | INFO | [gru] epoch 03 val_rmse=2.8081
+05:16:14 | INFO | [gru] epoch 04 val_rmse=2.7977
+05:17:34 | INFO | [gru] epoch 05 val_rmse=2.7990
+05:18:55 | INFO | [gru] epoch 06 val_rmse=2.7502
+05:20:15 | INFO | [gru] epoch 07 val_rmse=2.7647
+05:21:36 | INFO | [gru] epoch 08 val_rmse=2.7699
+05:22:56 | INFO | [gru] epoch 09 val_rmse=2.7660
+05:24:16 | INFO | [gru] epoch 10 val_rmse=2.7663
+05:25:36 | INFO | [gru] epoch 11 val_rmse=2.7634
+05:26:56 | INFO | [gru] epoch 12 val_rmse=2.7870
+05:28:17 | INFO | [gru] epoch 13 val_rmse=2.7974
+05:29:39 | INFO | [gru] epoch 14 val_rmse=2.8037
+05:29:39 | INFO | [gru] early stop @ ep 14 (best=2.7502)
+05:29:39 | INFO | gru trained in 1126.2s | best_val_rmse=2.7502
+05:29:42 | INFO | models in pool = 8: ['chronos', 'climatology', 'gru', 'lstm', 'persistence', 'random_forest', 'seasonal_naive', 'xgboost']
+05:29:43 | INFO | JOINT common-set sizes:
+split  h
+test   1    13647
+       2    12331
+       3    10954
+       4    16566
+val    1    10936
+       2    10939
+       3    12857
+       4    14854
+05:31:31 | INFO | WIN-RATE (national test) v3:
+ h         model  win_rate_vs_seasonal  n_wells
+ 1       chronos              0.624292     2824
+ 1   climatology              0.489023     2824
+ 1           gru              0.662181     2824
+ 1          lstm              0.637394     2824
+ 1   persistence              0.344193     2824
+ 1 random_forest              0.701487     2824
+ 1       xgboost              0.702195     2824
+ 2       chronos              0.568821     2739
+ 2   climatology              0.494341     2739
+ 2           gru              0.609712     2739
+ 2          lstm              0.584520     2739
+ 2   persistence              0.261044     2739
+ 2 random_forest              0.677985     2739
+ 2       xgboost              0.667032     2739
+ 3       chronos              0.587755     2695
+ 3   climatology              0.506865     2695
+ 3           gru              0.616327     2695
+ 3          lstm              0.572171     2695
+ 3   persistence              0.334323     2695
+ 3 random_forest              0.666048     2695
+ 3       xgboost              0.650093     2695
+ 4       chronos              0.578441     2913
+ 4   climatology              0.510814     2913
+ 4           gru              0.604875     2913
+ 4          lstm              0.587710     2913
+ 4   persistence              0.000000     2913
+ 4 random_forest              0.615860     2913
+ 4       xgboost              0.603845     2913
+05:31:31 | INFO | NATIONAL v3 (test):
+split  h          model     n   RMSE    MAE    bias  MASE_mean  NSE_median
+ test  1        chronos 13647 2.4673 1.3509  0.0937     1.0709     -0.2787
+ test  2        chronos 12331 2.7615 1.5750  0.1199     1.2125     -0.4224
+ test  3        chronos 10954 2.8448 1.5559  0.2930     1.1951     -0.3708
+ test  4        chronos 16566 2.8391 1.5541  0.3053     1.1812     -0.3028
+ test  1    climatology 13647 3.7341 2.0032  0.7017     1.4473     -0.6909
+ test  2    climatology 12331 3.8835 2.0912  0.6397     1.4730     -0.5004
+ test  3    climatology 10954 3.9133 2.0596  0.6372     1.4750     -0.5810
+ test  4    climatology 16566 3.7156 2.0243  0.6223     1.4592     -0.4641
+ test  1            gru 13647 2.6956 1.3452  0.3815     1.0265     -0.1134
+ test  2            gru 12331 2.9695 1.5736  0.4329     1.1754     -0.2243
+ test  3            gru 10954 3.1235 1.6041  0.4545     1.1997     -0.2897
+ test  4            gru 16566 3.0440 1.6519  0.4754     1.2272     -0.2675
+ test  1           lstm 13647 2.7476 1.3860  0.4640     1.0487     -0.1588
+ test  2           lstm 12331 3.0179 1.6174  0.4904     1.1911     -0.2410
+ test  3           lstm 10954 3.2054 1.6796  0.6111     1.2418     -0.3823
+ test  4           lstm 16566 3.0577 1.6741  0.6175     1.2366     -0.3033
+ test  1    persistence 13647 3.2632 1.9669 -0.0233     1.5683     -1.8071
+ test  2    persistence 12331 3.8661 2.5739  0.0755     2.0128     -2.3154
+ test  3    persistence 10954 3.4862 2.0946  0.4821     1.6063     -1.4794
+ test  4    persistence 16566 2.9389 1.5921  0.0758     1.2363     -0.6022
+ test  1  random_forest 13647 2.2715 1.3058  0.1646     1.0561     -0.1831
+ test  2  random_forest 12331 2.4738 1.4456  0.1106     1.1473     -0.1544
+ test  3  random_forest 10954 2.6086 1.4649  0.1944     1.1461     -0.3383
+ test  4  random_forest 16566 2.7028 1.5261  0.3307     1.1949     -0.3143
+ test  1 seasonal_naive 13647 2.9408 1.5549  0.1390     1.2008     -0.7243
+ test  2 seasonal_naive 12331 2.9488 1.6091  0.0246     1.2621     -0.5421
+ test  3 seasonal_naive 10954 3.0164 1.6219  0.0176     1.2602     -0.7026
+ test  4 seasonal_naive 16566 2.9389 1.5921  0.0758     1.2363     -0.6022
+ test  1        xgboost 13647 2.3312 1.3033  0.1531     1.0526     -0.1488
+ test  2        xgboost 12331 2.5643 1.4741  0.0791     1.1766     -0.1730
+ test  3        xgboost 10954 2.6730 1.4967  0.2207     1.1682     -0.3504
+ test  4        xgboost 16566 2.7288 1.5543  0.2446     1.2125     -0.3290
+05:31:31 | INFO | IGP v3 (test):
+split  h          model    n   RMSE    MAE    bias  MASE_mean  NSE_median
+ test  1        chronos  940 1.6237 0.9599  0.2580     1.2677     -0.6370
+ test  2        chronos  963 1.9482 1.1944  0.0386     1.4844     -0.6768
+ test  3        chronos  777 1.7928 1.1163 -0.2909     1.4224     -0.6834
+ test  4        chronos 1225 2.0332 1.1664 -0.0809     1.3888     -0.6880
+ test  1    climatology  940 4.2622 2.5415 -1.4427     2.4715     -4.2463
+ test  2    climatology  963 4.3911 2.6474 -1.5731     2.4943     -2.4101
+ test  3    climatology  777 4.4370 2.6669 -1.7602     2.6927     -2.9184
+ test  4    climatology 1225 4.3264 2.6025 -1.5564     2.4661     -2.5995
+ test  1            gru  940 1.6123 0.9778  0.0101     1.1845     -0.7133
+ test  2            gru  963 2.1378 1.3366 -0.3175     1.5519     -0.9222
+ test  3            gru  777 2.2460 1.4291 -0.7166     1.6125     -0.9908
+ test  4            gru 1225 2.5444 1.5789 -0.7429     1.6775     -1.0613
+ test  1           lstm  940 1.6531 1.0242  0.0850     1.2396     -0.8706
+ test  2           lstm  963 2.1654 1.3695 -0.2750     1.5792     -1.0190
+ test  3           lstm  777 2.1704 1.4160 -0.5856     1.6010     -0.9847
+ test  4           lstm 1225 2.2617 1.4128 -0.4463     1.5687     -0.8882
+ test  1    persistence  940 2.0424 1.2180  0.3793     1.5085     -1.7342
+ test  2    persistence  963 2.6540 1.6613  0.1240     2.0310     -1.8444
+ test  3    persistence  777 2.0374 1.3296 -0.3716     1.7027     -1.1719
+ test  4    persistence 1225 2.1951 1.1829 -0.1243     1.3910     -1.0581
+ test  1  random_forest  940 1.6613 1.0446  0.2203     1.3817     -1.0142
+ test  2  random_forest  963 1.9260 1.2042 -0.0310     1.5082     -0.6804
+ test  3  random_forest  777 1.8582 1.1947 -0.1795     1.3822     -0.9132
+ test  4  random_forest 1225 2.1492 1.2654 -0.0166     1.5237     -0.7760
+ test  1 seasonal_naive  940 2.0851 1.0837  0.0218     1.3047     -1.3053
+ test  2 seasonal_naive  963 1.9797 1.1834 -0.1376     1.4109     -1.0902
+ test  3 seasonal_naive  777 2.1916 1.1842 -0.1957     1.4124     -1.1014
+ test  4 seasonal_naive 1225 2.1951 1.1829 -0.1243     1.3910     -1.0581
+ test  1        xgboost  940 2.6340 1.2198  0.1190     1.3440     -0.7923
+ test  2        xgboost  963 2.6584 1.3307  0.0099     1.5984     -0.6393
+ test  3        xgboost  777 2.5114 1.3573  0.0003     1.5077     -0.7403
+ test  4        xgboost 1225 2.5691 1.3879 -0.0725     1.5791     -0.8529
+05:31:31 | INFO | END cycle8 — wrote cycle8_summary.json

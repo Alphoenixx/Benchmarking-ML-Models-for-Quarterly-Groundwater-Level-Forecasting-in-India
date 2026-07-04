@@ -1,0 +1,80 @@
+14:25:57 | INFO | Logger started -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\logs\cycle12_20260704_142557.log
+14:25:57 | INFO | cohort rows=236969 wells=4060
+14:27:28 | INFO | spatial block sizes:
+spatial_block
+0    820
+1    825
+2    993
+3    493
+4    929
+14:27:28 | INFO | cluster centroids (lat,lon):
+     lat    lon
+0  28.15  76.72
+1  12.07  77.17
+2  21.27  82.31
+3  24.66  87.71
+4  21.46  74.94
+14:27:28 | INFO | IGP wells in cohort = 423
+14:28:14 | INFO | spatial h1 fold0: train_wells=3235 test_wells=521 test_rows=2813
+14:28:59 | INFO | spatial h1 fold1: train_wells=3229 test_wells=625 test_rows=3448
+14:29:40 | INFO | spatial h1 fold2: train_wells=3063 test_wells=792 test_rows=5089
+14:30:32 | INFO | spatial h1 fold3: train_wells=3561 test_wells=370 test_rows=1815
+14:31:15 | INFO | spatial h1 fold4: train_wells=3124 test_wells=750 test_rows=4457
+14:31:16 | INFO | spatial national h1 n=17622 RMSE=2.6755 (canon 2.2715, +17.8%) MASE=1.2177 NSE=-0.1221 skill=+9.0%
+14:31:16 | INFO | spatial igp h1 n=1304 RMSE=2.8072 (canon 1.6613, +69.0%) MASE=2.2293 NSE=-3.8866 skill=-34.6%
+14:32:02 | INFO | spatial h2 fold0: train_wells=3233 test_wells=490 test_rows=2754
+14:32:49 | INFO | spatial h2 fold1: train_wells=3226 test_wells=613 test_rows=3054
+14:33:33 | INFO | spatial h2 fold2: train_wells=3062 test_wells=782 test_rows=4719
+14:34:27 | INFO | spatial h2 fold3: train_wells=3561 test_wells=369 test_rows=1790
+14:35:12 | INFO | spatial h2 fold4: train_wells=3122 test_wells=737 test_rows=4382
+14:35:13 | INFO | spatial national h2 n=16699 RMSE=2.9308 (canon 2.4738, +18.5%) MASE=1.3273 NSE=-0.2499 skill=+0.6%
+14:35:13 | INFO | spatial igp h2 n=1284 RMSE=3.1349 (canon 1.9260, +62.8%) MASE=2.3866 NSE=-2.7682 skill=-58.4%
+14:36:03 | INFO | spatial h3 fold0: train_wells=3221 test_wells=461 test_rows=2337
+14:36:52 | INFO | spatial h3 fold1: train_wells=3212 test_wells=562 test_rows=2855
+14:37:37 | INFO | spatial h3 fold2: train_wells=3055 test_wells=764 test_rows=4360
+14:38:33 | INFO | spatial h3 fold3: train_wells=3544 test_wells=361 test_rows=1552
+14:39:18 | INFO | spatial h3 fold4: train_wells=3108 test_wells=716 test_rows=3862
+14:39:20 | INFO | spatial national h3 n=14966 RMSE=3.0323 (canon 2.6086, +16.2%) MASE=1.3443 NSE=-0.2307 skill=-0.5%
+14:39:20 | INFO | spatial igp h3 n=1082 RMSE=3.0640 (canon 1.8582, +64.9%) MASE=2.4143 NSE=-2.8017 skill=-39.8%
+14:40:08 | INFO | spatial h4 fold0: train_wells=3206 test_wells=461 test_rows=2692
+14:40:56 | INFO | spatial h4 fold1: train_wells=3203 test_wells=576 test_rows=2929
+14:41:40 | INFO | spatial h4 fold2: train_wells=3043 test_wells=780 test_rows=4804
+14:42:34 | INFO | spatial h4 fold3: train_wells=3533 test_wells=367 test_rows=1887
+14:43:19 | INFO | spatial h4 fold4: train_wells=3099 test_wells=730 test_rows=4339
+14:43:20 | INFO | spatial national h4 n=16651 RMSE=2.9374 (canon 2.7028, +8.7%) MASE=1.2037 NSE=-0.3557 skill=+0.1%
+14:43:21 | INFO | spatial igp h4 n=1239 RMSE=2.6765 (canon 2.1492, +24.5%) MASE=1.7755 NSE=-1.2377 skill=-21.9%
+14:44:12 | INFO | random h1 fold0: train_wells=3225 test_wells=613 test_rows=3614
+14:45:04 | INFO | random h1 fold1: train_wells=3277 test_wells=587 test_rows=3316
+14:45:53 | INFO | random h1 fold2: train_wells=3210 test_wells=638 test_rows=3657
+14:46:45 | INFO | random h1 fold3: train_wells=3249 test_wells=621 test_rows=3635
+14:47:36 | INFO | random h1 fold4: train_wells=3251 test_wells=599 test_rows=3400
+14:47:37 | INFO | random national h1 n=17622 RMSE=2.4156 (canon 2.2715, +6.3%) MASE=1.0887 NSE=-0.0457 skill=+17.9%
+14:47:37 | INFO | random igp h1 n=1304 RMSE=1.8800 (canon 1.6613, +13.2%) MASE=1.3503 NSE=-0.8468 skill=+9.8%
+14:48:28 | INFO | random h2 fold0: train_wells=3225 test_wells=598 test_rows=3428
+14:49:18 | INFO | random h2 fold1: train_wells=3276 test_wells=573 test_rows=3136
+14:50:06 | INFO | random h2 fold2: train_wells=3206 test_wells=624 test_rows=3483
+14:50:56 | INFO | random h2 fold3: train_wells=3248 test_wells=612 test_rows=3433
+14:51:46 | INFO | random h2 fold4: train_wells=3249 test_wells=584 test_rows=3219
+14:51:47 | INFO | random national h2 n=16699 RMSE=2.6471 (canon 2.4738, +7.0%) MASE=1.2085 NSE=-0.1738 skill=+10.2%
+14:51:47 | INFO | random igp h2 n=1284 RMSE=2.0687 (canon 1.9260, +7.4%) MASE=1.5727 NSE=-0.8977 skill=-4.5%
+14:52:36 | INFO | random h3 fold0: train_wells=3210 test_wells=577 test_rows=3062
+14:53:26 | INFO | random h3 fold1: train_wells=3263 test_wells=552 test_rows=2820
+14:54:14 | INFO | random h3 fold2: train_wells=3193 test_wells=598 test_rows=3108
+14:55:03 | INFO | random h3 fold3: train_wells=3238 test_wells=579 test_rows=3085
+14:55:51 | INFO | random h3 fold4: train_wells=3236 test_wells=558 test_rows=2891
+14:55:52 | INFO | random national h3 n=14966 RMSE=2.7268 (canon 2.6086, +4.5%) MASE=1.2300 NSE=-0.1887 skill=+9.6%
+14:55:52 | INFO | random igp h3 n=1082 RMSE=2.2172 (canon 1.8582, +19.3%) MASE=1.5364 NSE=-1.2893 skill=-1.2%
+14:56:40 | INFO | random h4 fold0: train_wells=3201 test_wells=588 test_rows=3400
+14:57:28 | INFO | random h4 fold1: train_wells=3250 test_wells=563 test_rows=3149
+14:58:16 | INFO | random h4 fold2: train_wells=3179 test_wells=611 test_rows=3469
+14:59:03 | INFO | random h4 fold3: train_wells=3229 test_wells=586 test_rows=3405
+14:59:51 | INFO | random h4 fold4: train_wells=3225 test_wells=566 test_rows=3228
+14:59:52 | INFO | random national h4 n=16651 RMSE=2.6978 (canon 2.7028, -0.2%) MASE=1.1483 NSE=-0.3183 skill=+8.2%
+14:59:52 | INFO | random igp h4 n=1239 RMSE=2.1274 (canon 2.1492, -1.0%) MASE=1.4712 NSE=-0.8089 skill=+3.1%
+15:00:52 | INFO | leave_igp_out igp h1 n=1304 train_wells=3632 RMSE=2.0683 (canon 1.6613, +24.5%) skill=+0.8%
+15:01:49 | INFO | leave_igp_out igp h2 n=1284 train_wells=3628 RMSE=2.2557 (canon 1.9260, +17.1%) skill=-13.9%
+15:02:45 | INFO | leave_igp_out igp h3 n=1082 train_wells=3615 RMSE=2.3306 (canon 1.8582, +25.4%) skill=-6.3%
+15:03:40 | INFO | leave_igp_out igp h4 n=1239 train_wells=3600 RMSE=2.1611 (canon 2.1492, +0.6%) skill=+1.5%
+15:03:40 | INFO | Seasonal Naive NaNs in test: {'spatial_h1': 3975, 'spatial_h2': 4368, 'spatial_h3': 4012, 'spatial_h4': 85, 'random_h1': 3975, 'random_h2': 4368, 'random_h3': 4012, 'random_h4': 85}
+15:03:40 | INFO | DONE in 2263.2s -> outputs/reports/cycle12_summary.json
+15:03:41 | INFO | figures saved

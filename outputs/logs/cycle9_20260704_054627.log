@@ -1,0 +1,30 @@
+05:46:27 | INFO | Logger started -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\logs\cycle9_20260704_054627.log
+05:46:27 | INFO | START cycle9 — significance + stratified robustness
+05:46:27 | INFO | all_preds_long (824672, 8) cols=['station_id', 'period', 'h', 'split', 'model', 'y', 'yhat', 'scale']
+05:46:27 | INFO | models in pool = 8: ['chronos', 'climatology', 'gru', 'lstm', 'persistence', 'random_forest', 'seasonal_naive', 'xgboost']
+05:46:27 | INFO | stations=6432  igp_wells=975
+05:46:30 | INFO | wrote significance_wilcoxon_v3.csv + significance_dm_v3.csv
+05:46:30 | INFO | national Wilcoxon (test) vs RF:
+ h        model_b  n_wells  median_diff  a_better_frac       p_value
+ 1        xgboost     2555     0.013494       0.467710  3.600912e-05
+ 1        chronos     2555    -0.020665       0.525245  5.358068e-07
+ 1            gru     2555     0.022582       0.461840  1.056424e-01
+ 1 seasonal_naive     2555    -0.184205       0.715460 7.539179e-126
+ 2        xgboost     2531    -0.009924       0.526669  1.130882e-02
+ 2        chronos     2531    -0.068181       0.571316  3.732475e-22
+ 2            gru     2531    -0.019609       0.529040  2.190842e-06
+ 2 seasonal_naive     2531    -0.152012       0.685895  1.622829e-89
+ 3        xgboost     2471    -0.011310       0.528531  2.977687e-02
+ 3        chronos     2471    -0.047349       0.553622  4.117897e-12
+ 3            gru     2471     0.012336       0.484015  2.513358e-01
+ 3 seasonal_naive     2471    -0.147304       0.672197  3.829777e-81
+ 4        xgboost     2768    -0.009589       0.533237  1.113390e-04
+ 4        chronos     2768    -0.022297       0.527818  6.376990e-05
+ 4            gru     2768     0.011038       0.482298  3.740584e-01
+ 4 seasonal_naive     2768    -0.106584       0.622471  5.030385e-41
+05:46:31 | INFO | wrote winrate_significance_v3.csv
+05:46:31 | INFO | history terciles: q1=22 q2=74 counts={'short': 1078, 'long': 963, 'medium': 872}
+05:46:31 | INFO | wrote strat_history_national_v3.csv
+05:46:44 | INFO | wrote nse_distribution_v3.csv
+05:46:44 | INFO | wrote skill_vs_history_national_v3.png
+05:46:44 | INFO | END cycle9 in 17.64s

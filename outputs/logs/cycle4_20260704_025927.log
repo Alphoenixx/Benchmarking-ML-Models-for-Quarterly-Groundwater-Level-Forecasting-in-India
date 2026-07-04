@@ -1,0 +1,597 @@
+02:59:27 | INFO | Logger started -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\logs\cycle4_20260704_025927.log
+02:59:27 | INFO | Platform: Windows-11-10.0.26200-SP0 | Python 3.13.5
+02:59:27 | INFO | national wells=4060 | IGP wells=423
+02:59:27 | INFO | START: baselines national
+02:59:40 | INFO | [national] eval rows=409407
+03:00:18 | INFO | [national] metrics:
+split  h          model     n   RMSE    MAE    bias  MASE_mean  NSE_median
+ test  1    climatology 22567 3.7626 2.0936  0.6264     1.5557     -0.2848
+ test  2    climatology 22567 3.7626 2.0936  0.6264     1.5557     -0.2848
+ test  3    climatology 22567 3.7626 2.0936  0.6264     1.5557     -0.2848
+ test  4    climatology 22567 3.7626 2.0936  0.6264     1.5557     -0.2848
+ test  1    persistence 17622 3.3307 2.0107 -0.2792     1.5605     -1.2622
+ test  2    persistence 16699 3.9347 2.6111 -0.2050     2.0563     -1.8268
+ test  3    persistence 14966 3.6936 2.2676  0.0023     1.7720     -1.2378
+ test  4    persistence 16651 2.9353 1.5912  0.0758     1.2328     -0.6022
+ test  1 seasonal_naive 16651 2.9353 1.5912  0.0758     1.2328     -0.6022
+ test  2 seasonal_naive 16651 2.9353 1.5912  0.0758     1.2328     -0.6022
+ test  3 seasonal_naive 16651 2.9353 1.5912  0.0758     1.2328     -0.6022
+ test  4 seasonal_naive 16651 2.9353 1.5912  0.0758     1.2328     -0.6022
+  val  1    climatology 17704 3.4094 1.9553 -0.1352     1.3767      0.0895
+  val  2    climatology 17704 3.4094 1.9553 -0.1352     1.3767      0.0895
+  val  3    climatology 17704 3.4094 1.9553 -0.1352     1.3767      0.0895
+  val  4    climatology 17704 3.4094 1.9553 -0.1352     1.3767      0.0895
+  val  1    persistence 13068 3.7339 2.1905  0.0166     1.6584     -1.1048
+  val  2    persistence 12914 4.6193 2.9456  0.5104     2.2128     -2.1573
+  val  3    persistence 14874 4.3831 2.6757  0.7417     1.9483     -1.5514
+  val  4    persistence 14985 3.2980 1.8498  0.2178     1.2598     -0.2480
+  val  1 seasonal_naive 14985 3.2980 1.8498  0.2178     1.2598     -0.2480
+  val  2 seasonal_naive 14985 3.2980 1.8498  0.2178     1.2598     -0.2480
+  val  3 seasonal_naive 14985 3.2980 1.8498  0.2178     1.2598     -0.2480
+  val  4 seasonal_naive 14985 3.2980 1.8498  0.2178     1.2598     -0.2480
+03:00:18 | INFO | END:   baselines national (51.25s)
+03:00:18 | INFO | START: baselines IGP
+03:00:20 | INFO | [igp] eval rows=33124
+03:00:23 | INFO | [igp] metrics:
+split  h          model    n   RMSE    MAE    bias  MASE_mean  NSE_median
+ test  1    climatology 1757 4.6547 2.7955 -1.7337     2.7745     -2.9420
+ test  2    climatology 1757 4.6547 2.7955 -1.7337     2.7745     -2.9420
+ test  3    climatology 1757 4.6547 2.7955 -1.7337     2.7745     -2.9420
+ test  4    climatology 1757 4.6547 2.7955 -1.7337     2.7745     -2.9420
+ test  1    persistence 1304 2.2926 1.2752  0.1427     1.4403     -1.2740
+ test  2    persistence 1284 2.6356 1.6493 -0.0132     1.9004     -1.6063
+ test  3    persistence 1082 2.5333 1.4810 -0.2167     1.7213     -1.2522
+ test  4    persistence 1239 2.2085 1.1928 -0.1264     1.3503     -1.0581
+ test  1 seasonal_naive 1239 2.2085 1.1928 -0.1264     1.3503     -1.0581
+ test  2 seasonal_naive 1239 2.2085 1.1928 -0.1264     1.3503     -1.0581
+ test  3 seasonal_naive 1239 2.2085 1.1928 -0.1264     1.3503     -1.0581
+ test  4 seasonal_naive 1239 2.2085 1.1928 -0.1264     1.3503     -1.0581
+  val  1    climatology 1528 4.1689 2.4249 -1.4108     2.4542     -2.2376
+  val  2    climatology 1528 4.1689 2.4249 -1.4108     2.4542     -2.2376
+  val  3    climatology 1528 4.1689 2.4249 -1.4108     2.4542     -2.2376
+  val  4    climatology 1528 4.1689 2.4249 -1.4108     2.4542     -2.2376
+  val  1    persistence 1177 2.2695 1.1300 -0.0769     1.2539     -1.1539
+  val  2    persistence 1132 2.7298 1.5221  0.0072     1.7466     -2.0550
+  val  3    persistence 1315 2.6709 1.4846 -0.0264     1.6517     -1.6591
+  val  4    persistence 1299 2.2540 1.2500  0.0137     1.2902     -1.1902
+  val  1 seasonal_naive 1299 2.2540 1.2500  0.0137     1.2902     -1.1902
+  val  2 seasonal_naive 1299 2.2540 1.2500  0.0137     1.2902     -1.1902
+  val  3 seasonal_naive 1299 2.2540 1.2500  0.0137     1.2902     -1.1902
+  val  4 seasonal_naive 1299 2.2540 1.2500  0.0137     1.2902     -1.1902
+03:00:23 | INFO | END:   baselines IGP (4.69s)
+03:00:24 | INFO | WROTE cycle4_summary.json:
+{
+  "national": [
+    {
+      "split": "test",
+      "h": 1,
+      "model": "climatology",
+      "n": 22567,
+      "RMSE": 3.7626,
+      "MAE": 2.0936,
+      "bias": 0.6264,
+      "MASE_mean": 1.5557,
+      "NSE_median": -0.2848
+    },
+    {
+      "split": "test",
+      "h": 2,
+      "model": "climatology",
+      "n": 22567,
+      "RMSE": 3.7626,
+      "MAE": 2.0936,
+      "bias": 0.6264,
+      "MASE_mean": 1.5557,
+      "NSE_median": -0.2848
+    },
+    {
+      "split": "test",
+      "h": 3,
+      "model": "climatology",
+      "n": 22567,
+      "RMSE": 3.7626,
+      "MAE": 2.0936,
+      "bias": 0.6264,
+      "MASE_mean": 1.5557,
+      "NSE_median": -0.2848
+    },
+    {
+      "split": "test",
+      "h": 4,
+      "model": "climatology",
+      "n": 22567,
+      "RMSE": 3.7626,
+      "MAE": 2.0936,
+      "bias": 0.6264,
+      "MASE_mean": 1.5557,
+      "NSE_median": -0.2848
+    },
+    {
+      "split": "test",
+      "h": 1,
+      "model": "persistence",
+      "n": 17622,
+      "RMSE": 3.3307,
+      "MAE": 2.0107,
+      "bias": -0.2792,
+      "MASE_mean": 1.5605,
+      "NSE_median": -1.2622
+    },
+    {
+      "split": "test",
+      "h": 2,
+      "model": "persistence",
+      "n": 16699,
+      "RMSE": 3.9347,
+      "MAE": 2.6111,
+      "bias": -0.205,
+      "MASE_mean": 2.0563,
+      "NSE_median": -1.8268
+    },
+    {
+      "split": "test",
+      "h": 3,
+      "model": "persistence",
+      "n": 14966,
+      "RMSE": 3.6936,
+      "MAE": 2.2676,
+      "bias": 0.0023,
+      "MASE_mean": 1.772,
+      "NSE_median": -1.2378
+    },
+    {
+      "split": "test",
+      "h": 4,
+      "model": "persistence",
+      "n": 16651,
+      "RMSE": 2.9353,
+      "MAE": 1.5912,
+      "bias": 0.0758,
+      "MASE_mean": 1.2328,
+      "NSE_median": -0.6022
+    },
+    {
+      "split": "test",
+      "h": 1,
+      "model": "seasonal_naive",
+      "n": 16651,
+      "RMSE": 2.9353,
+      "MAE": 1.5912,
+      "bias": 0.0758,
+      "MASE_mean": 1.2328,
+      "NSE_median": -0.6022
+    },
+    {
+      "split": "test",
+      "h": 2,
+      "model": "seasonal_naive",
+      "n": 16651,
+      "RMSE": 2.9353,
+      "MAE": 1.5912,
+      "bias": 0.0758,
+      "MASE_mean": 1.2328,
+      "NSE_median": -0.6022
+    },
+    {
+      "split": "test",
+      "h": 3,
+      "model": "seasonal_naive",
+      "n": 16651,
+      "RMSE": 2.9353,
+      "MAE": 1.5912,
+      "bias": 0.0758,
+      "MASE_mean": 1.2328,
+      "NSE_median": -0.6022
+    },
+    {
+      "split": "test",
+      "h": 4,
+      "model": "seasonal_naive",
+      "n": 16651,
+      "RMSE": 2.9353,
+      "MAE": 1.5912,
+      "bias": 0.0758,
+      "MASE_mean": 1.2328,
+      "NSE_median": -0.6022
+    },
+    {
+      "split": "val",
+      "h": 1,
+      "model": "climatology",
+      "n": 17704,
+      "RMSE": 3.4094,
+      "MAE": 1.9553,
+      "bias": -0.1352,
+      "MASE_mean": 1.3767,
+      "NSE_median": 0.0895
+    },
+    {
+      "split": "val",
+      "h": 2,
+      "model": "climatology",
+      "n": 17704,
+      "RMSE": 3.4094,
+      "MAE": 1.9553,
+      "bias": -0.1352,
+      "MASE_mean": 1.3767,
+      "NSE_median": 0.0895
+    },
+    {
+      "split": "val",
+      "h": 3,
+      "model": "climatology",
+      "n": 17704,
+      "RMSE": 3.4094,
+      "MAE": 1.9553,
+      "bias": -0.1352,
+      "MASE_mean": 1.3767,
+      "NSE_median": 0.0895
+    },
+    {
+      "split": "val",
+      "h": 4,
+      "model": "climatology",
+      "n": 17704,
+      "RMSE": 3.4094,
+      "MAE": 1.9553,
+      "bias": -0.1352,
+      "MASE_mean": 1.3767,
+      "NSE_median": 0.0895
+    },
+    {
+      "split": "val",
+      "h": 1,
+      "model": "persistence",
+      "n": 13068,
+      "RMSE": 3.7339,
+      "MAE": 2.1905,
+      "bias": 0.0166,
+      "MASE_mean": 1.6584,
+      "NSE_median": -1.1048
+    },
+    {
+      "split": "val",
+      "h": 2,
+      "model": "persistence",
+      "n": 12914,
+      "RMSE": 4.6193,
+      "MAE": 2.9456,
+      "bias": 0.5104,
+      "MASE_mean": 2.2128,
+      "NSE_median": -2.1573
+    },
+    {
+      "split": "val",
+      "h": 3,
+      "model": "persistence",
+      "n": 14874,
+      "RMSE": 4.3831,
+      "MAE": 2.6757,
+      "bias": 0.7417,
+      "MASE_mean": 1.9483,
+      "NSE_median": -1.5514
+    },
+    {
+      "split": "val",
+      "h": 4,
+      "model": "persistence",
+      "n": 14985,
+      "RMSE": 3.298,
+      "MAE": 1.8498,
+      "bias": 0.2178,
+      "MASE_mean": 1.2598,
+      "NSE_median": -0.248
+    },
+    {
+      "split": "val",
+      "h": 1,
+      "model": "seasonal_naive",
+      "n": 14985,
+      "RMSE": 3.298,
+      "MAE": 1.8498,
+      "bias": 0.2178,
+      "MASE_mean": 1.2598,
+      "NSE_median": -0.248
+    },
+    {
+      "split": "val",
+      "h": 2,
+      "model": "seasonal_naive",
+      "n": 14985,
+      "RMSE": 3.298,
+      "MAE": 1.8498,
+      "bias": 0.2178,
+      "MASE_mean": 1.2598,
+      "NSE_median": -0.248
+    },
+    {
+      "split": "val",
+      "h": 3,
+      "model": "seasonal_naive",
+      "n": 14985,
+      "RMSE": 3.298,
+      "MAE": 1.8498,
+      "bias": 0.2178,
+      "MASE_mean": 1.2598,
+      "NSE_median": -0.248
+    },
+    {
+      "split": "val",
+      "h": 4,
+      "model": "seasonal_naive",
+      "n": 14985,
+      "RMSE": 3.298,
+      "MAE": 1.8498,
+      "bias": 0.2178,
+      "MASE_mean": 1.2598,
+      "NSE_median": -0.248
+    }
+  ],
+  "igp": [
+    {
+      "split": "test",
+      "h": 1,
+      "model": "climatology",
+      "n": 1757,
+      "RMSE": 4.6547,
+      "MAE": 2.7955,
+      "bias": -1.7337,
+      "MASE_mean": 2.7745,
+      "NSE_median": -2.942
+    },
+    {
+      "split": "test",
+      "h": 2,
+      "model": "climatology",
+      "n": 1757,
+      "RMSE": 4.6547,
+      "MAE": 2.7955,
+      "bias": -1.7337,
+      "MASE_mean": 2.7745,
+      "NSE_median": -2.942
+    },
+    {
+      "split": "test",
+      "h": 3,
+      "model": "climatology",
+      "n": 1757,
+      "RMSE": 4.6547,
+      "MAE": 2.7955,
+      "bias": -1.7337,
+      "MASE_mean": 2.7745,
+      "NSE_median": -2.942
+    },
+    {
+      "split": "test",
+      "h": 4,
+      "model": "climatology",
+      "n": 1757,
+      "RMSE": 4.6547,
+      "MAE": 2.7955,
+      "bias": -1.7337,
+      "MASE_mean": 2.7745,
+      "NSE_median": -2.942
+    },
+    {
+      "split": "test",
+      "h": 1,
+      "model": "persistence",
+      "n": 1304,
+      "RMSE": 2.2926,
+      "MAE": 1.2752,
+      "bias": 0.1427,
+      "MASE_mean": 1.4403,
+      "NSE_median": -1.274
+    },
+    {
+      "split": "test",
+      "h": 2,
+      "model": "persistence",
+      "n": 1284,
+      "RMSE": 2.6356,
+      "MAE": 1.6493,
+      "bias": -0.0132,
+      "MASE_mean": 1.9004,
+      "NSE_median": -1.6063
+    },
+    {
+      "split": "test",
+      "h": 3,
+      "model": "persistence",
+      "n": 1082,
+      "RMSE": 2.5333,
+      "MAE": 1.481,
+      "bias": -0.2167,
+      "MASE_mean": 1.7213,
+      "NSE_median": -1.2522
+    },
+    {
+      "split": "test",
+      "h": 4,
+      "model": "persistence",
+      "n": 1239,
+      "RMSE": 2.2085,
+      "MAE": 1.1928,
+      "bias": -0.1264,
+      "MASE_mean": 1.3503,
+      "NSE_median": -1.0581
+    },
+    {
+      "split": "test",
+      "h": 1,
+      "model": "seasonal_naive",
+      "n": 1239,
+      "RMSE": 2.2085,
+      "MAE": 1.1928,
+      "bias": -0.1264,
+      "MASE_mean": 1.3503,
+      "NSE_median": -1.0581
+    },
+    {
+      "split": "test",
+      "h": 2,
+      "model": "seasonal_naive",
+      "n": 1239,
+      "RMSE": 2.2085,
+      "MAE": 1.1928,
+      "bias": -0.1264,
+      "MASE_mean": 1.3503,
+      "NSE_median": -1.0581
+    },
+    {
+      "split": "test",
+      "h": 3,
+      "model": "seasonal_naive",
+      "n": 1239,
+      "RMSE": 2.2085,
+      "MAE": 1.1928,
+      "bias": -0.1264,
+      "MASE_mean": 1.3503,
+      "NSE_median": -1.0581
+    },
+    {
+      "split": "test",
+      "h": 4,
+      "model": "seasonal_naive",
+      "n": 1239,
+      "RMSE": 2.2085,
+      "MAE": 1.1928,
+      "bias": -0.1264,
+      "MASE_mean": 1.3503,
+      "NSE_median": -1.0581
+    },
+    {
+      "split": "val",
+      "h": 1,
+      "model": "climatology",
+      "n": 1528,
+      "RMSE": 4.1689,
+      "MAE": 2.4249,
+      "bias": -1.4108,
+      "MASE_mean": 2.4542,
+      "NSE_median": -2.2376
+    },
+    {
+      "split": "val",
+      "h": 2,
+      "model": "climatology",
+      "n": 1528,
+      "RMSE": 4.1689,
+      "MAE": 2.4249,
+      "bias": -1.4108,
+      "MASE_mean": 2.4542,
+      "NSE_median": -2.2376
+    },
+    {
+      "split": "val",
+      "h": 3,
+      "model": "climatology",
+      "n": 1528,
+      "RMSE": 4.1689,
+      "MAE": 2.4249,
+      "bias": -1.4108,
+      "MASE_mean": 2.4542,
+      "NSE_median": -2.2376
+    },
+    {
+      "split": "val",
+      "h": 4,
+      "model": "climatology",
+      "n": 1528,
+      "RMSE": 4.1689,
+      "MAE": 2.4249,
+      "bias": -1.4108,
+      "MASE_mean": 2.4542,
+      "NSE_median": -2.2376
+    },
+    {
+      "split": "val",
+      "h": 1,
+      "model": "persistence",
+      "n": 1177,
+      "RMSE": 2.2695,
+      "MAE": 1.13,
+      "bias": -0.0769,
+      "MASE_mean": 1.2539,
+      "NSE_median": -1.1539
+    },
+    {
+      "split": "val",
+      "h": 2,
+      "model": "persistence",
+      "n": 1132,
+      "RMSE": 2.7298,
+      "MAE": 1.5221,
+      "bias": 0.0072,
+      "MASE_mean": 1.7466,
+      "NSE_median": -2.055
+    },
+    {
+      "split": "val",
+      "h": 3,
+      "model": "persistence",
+      "n": 1315,
+      "RMSE": 2.6709,
+      "MAE": 1.4846,
+      "bias": -0.0264,
+      "MASE_mean": 1.6517,
+      "NSE_median": -1.6591
+    },
+    {
+      "split": "val",
+      "h": 4,
+      "model": "persistence",
+      "n": 1299,
+      "RMSE": 2.254,
+      "MAE": 1.25,
+      "bias": 0.0137,
+      "MASE_mean": 1.2902,
+      "NSE_median": -1.1902
+    },
+    {
+      "split": "val",
+      "h": 1,
+      "model": "seasonal_naive",
+      "n": 1299,
+      "RMSE": 2.254,
+      "MAE": 1.25,
+      "bias": 0.0137,
+      "MASE_mean": 1.2902,
+      "NSE_median": -1.1902
+    },
+    {
+      "split": "val",
+      "h": 2,
+      "model": "seasonal_naive",
+      "n": 1299,
+      "RMSE": 2.254,
+      "MAE": 1.25,
+      "bias": 0.0137,
+      "MASE_mean": 1.2902,
+      "NSE_median": -1.1902
+    },
+    {
+      "split": "val",
+      "h": 3,
+      "model": "seasonal_naive",
+      "n": 1299,
+      "RMSE": 2.254,
+      "MAE": 1.25,
+      "bias": 0.0137,
+      "MASE_mean": 1.2902,
+      "NSE_median": -1.1902
+    },
+    {
+      "split": "val",
+      "h": 4,
+      "model": "seasonal_naive",
+      "n": 1299,
+      "RMSE": 2.254,
+      "MAE": 1.25,
+      "bias": 0.0137,
+      "MASE_mean": 1.2902,
+      "NSE_median": -1.1902
+    }
+  ]
+}
+03:00:24 | INFO | CYCLE 4 COMPLETE

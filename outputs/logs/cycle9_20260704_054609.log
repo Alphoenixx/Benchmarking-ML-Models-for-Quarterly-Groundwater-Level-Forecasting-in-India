@@ -1,0 +1,4 @@
+05:46:09 | INFO | Logger started -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\logs\cycle9_20260704_054609.log
+05:46:09 | INFO | START cycle9 — significance + stratified robustness
+05:46:09 | INFO | all_preds_long (824672, 8) cols=['station_id', 'period', 'h', 'split', 'model', 'y', 'yhat', 'scale']
+05:46:09 | INFO | models in pool = 8: ['chronos', 'climatology', 'gru', 'lstm', 'persistence', 'random_forest', 'seasonal_naive', 'xgboost']

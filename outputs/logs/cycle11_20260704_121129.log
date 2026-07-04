@@ -1,0 +1,26 @@
+12:11:29 | INFO | Logger started -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\logs\cycle11_20260704_121129.log
+12:11:36 | INFO | panel=248496 cohort_rows=236969 wells=4060
+12:14:12 | INFO | base cols=44 aug cols=65 (+21 engineered)
+12:14:27 | INFO | canonical common test keys = 53498
+12:15:28 | INFO | rf baseline national h1 n=13647 RMSE=2.2715 MASE=1.0198 NSE=-0.1831
+12:15:28 | INFO | rf baseline igp h1 n=940 RMSE=1.6613 MASE=1.2371 NSE=-1.0142
+12:17:26 | INFO | rf augmented national h1 n=13647 RMSE=2.2771 MASE=1.0262 NSE=-0.1888
+12:17:26 | INFO | rf augmented igp h1 n=940 RMSE=1.6655 MASE=1.2411 NSE=-0.9017
+12:36:42 | INFO | rf_aug SHAP h1 eng_climate_share=0.0240 AR=0.797
+12:37:40 | INFO | rf baseline national h2 n=12331 RMSE=2.4738 MASE=1.0994 NSE=-0.1544
+12:37:40 | INFO | rf baseline igp h2 n=963 RMSE=1.9260 MASE=1.4097 NSE=-0.6804
+12:39:30 | INFO | rf augmented national h2 n=12331 RMSE=2.4829 MASE=1.1008 NSE=-0.1637
+12:39:31 | INFO | rf augmented igp h2 n=963 RMSE=1.9421 MASE=1.4089 NSE=-0.6437
+12:56:07 | INFO | rf_aug SHAP h2 eng_climate_share=0.0279 AR=0.844
+12:57:01 | INFO | rf baseline national h3 n=10954 RMSE=2.6086 MASE=1.1060 NSE=-0.3383
+12:57:01 | INFO | rf baseline igp h3 n=777 RMSE=1.8582 MASE=1.3191 NSE=-0.9132
+12:58:49 | INFO | rf augmented national h3 n=10954 RMSE=2.6080 MASE=1.1057 NSE=-0.3277
+12:58:49 | INFO | rf augmented igp h3 n=777 RMSE=1.8823 MASE=1.3336 NSE=-0.9481
+13:13:51 | INFO | rf_aug SHAP h3 eng_climate_share=0.0279 AR=0.863
+13:14:43 | INFO | rf baseline national h4 n=16566 RMSE=2.7028 MASE=1.1374 NSE=-0.3143
+13:14:43 | INFO | rf baseline igp h4 n=1225 RMSE=2.1492 MASE=1.4197 NSE=-0.7760
+13:16:26 | INFO | rf augmented national h4 n=16566 RMSE=2.7112 MASE=1.1409 NSE=-0.3105
+13:16:26 | INFO | rf augmented igp h4 n=1225 RMSE=2.2139 MASE=1.4466 NSE=-0.7978
+13:32:39 | INFO | rf_aug SHAP h4 eng_climate_share=0.0293 AR=0.851
+13:32:45 | INFO | xgb baseline national h1 n=13647 RMSE=2.5236 MASE=1.1089 NSE=-0.3218
+13:32:46 | INFO | xgb baseline igp h1 n=940 RMSE=3.0741 MASE=1.6939 NSE=-2.3570

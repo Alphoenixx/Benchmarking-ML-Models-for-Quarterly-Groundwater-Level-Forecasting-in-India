@@ -1,0 +1,26 @@
+{
+  "target_states": [
+    "Punjab",
+    "Haryana",
+    "Uttar Pradesh",
+    "Delhi",
+    "Chandigarh"
+  ],
+  "raw_shape": [
+    416952,
+    15
+  ],
+  "unique_wells": 6440,
+  "date_range": "1994 to 2025",
+  "records_per_year_shape": [
+    32
+  ],
+  "records_by_state_shape": [
+    2
+  ],
+  "target_region_size": 416952,
+  "missingness_shape": [
+    17
+  ],
+  "depletion_trend_slope": -0.3087541820226682
+}

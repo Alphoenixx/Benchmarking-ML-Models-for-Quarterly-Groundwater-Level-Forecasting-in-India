@@ -1,0 +1,29 @@
+05:56:14 | INFO | Logger started -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\logs\cycle10_20260704_055614.log
+05:56:14 | INFO | panel rows=248496 wells=6432
+05:56:14 | INFO | national cohort rows=236969 wells=4060
+05:57:28 | INFO | feature table rows=236969 cols=44
+05:57:28 | INFO | test_h1 rows=17622 igp_test=1304
+06:21:52 | INFO | rf h1 national n=4000 AR=0.783 cov=0.059 seas=0.123 rho=0.967 top=y_roll4_mean
+06:29:49 | INFO | rf h1 igp n=1304 AR=0.875 cov=0.035 seas=0.062 rho=0.979 top=y_roll4_mean
+06:29:49 | INFO | test_h2 rows=16699 igp_test=1284
+06:50:55 | INFO | rf h2 national n=4000 AR=0.818 cov=0.042 seas=0.091 rho=0.974 top=y_roll4_mean
+06:57:39 | INFO | rf h2 igp n=1284 AR=0.892 cov=0.027 seas=0.041 rho=0.984 top=y_roll4_mean
+06:57:39 | INFO | test_h3 rows=14966 igp_test=1082
+07:16:41 | INFO | rf h3 national n=4000 AR=0.844 cov=0.050 seas=0.052 rho=0.975 top=y_roll4_mean
+07:21:48 | INFO | rf h3 igp n=1082 AR=0.896 cov=0.033 seas=0.025 rho=0.987 top=y_roll4_mean
+07:21:48 | INFO | test_h4 rows=16651 igp_test=1239
+07:42:15 | INFO | rf h4 national n=4000 AR=0.866 cov=0.042 seas=0.045 rho=0.971 top=y_roll4_mean
+07:48:36 | INFO | rf h4 igp n=1239 AR=0.916 cov=0.026 seas=0.019 rho=0.977 top=y_roll4_mean
+07:48:37 | INFO | test_h1 rows=17622 igp_test=1304
+07:48:39 | INFO | xgb h1 national n=4000 AR=0.723 cov=0.110 seas=0.097 rho=0.902 top=y_roll4_mean
+07:48:39 | INFO | xgb h1 igp n=1304 AR=0.808 cov=0.089 seas=0.051 rho=0.901 top=y_roll4_mean
+07:48:40 | INFO | test_h2 rows=16699 igp_test=1284
+07:48:40 | INFO | xgb h2 national n=4000 AR=0.755 cov=0.077 seas=0.093 rho=0.833 top=y_roll4_mean
+07:48:41 | INFO | xgb h2 igp n=1284 AR=0.838 cov=0.063 seas=0.042 rho=0.835 top=y_roll4_mean
+07:48:41 | INFO | test_h3 rows=14966 igp_test=1082
+07:48:42 | INFO | xgb h3 national n=4000 AR=0.739 cov=0.100 seas=0.067 rho=0.852 top=y_roll4_mean
+07:48:43 | INFO | xgb h3 igp n=1082 AR=0.809 cov=0.085 seas=0.031 rho=0.854 top=y_roll4_mean
+07:48:43 | INFO | test_h4 rows=16651 igp_test=1239
+07:48:44 | INFO | xgb h4 national n=4000 AR=0.794 cov=0.091 seas=0.042 rho=0.912 top=y_roll4_mean
+07:48:44 | INFO | xgb h4 igp n=1239 AR=0.856 cov=0.069 seas=0.018 rho=0.895 top=y_roll4_mean
+07:48:44 | INFO | DONE in 6749.7s -> outputs/reports/cycle10_summary.json

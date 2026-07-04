@@ -1,0 +1,529 @@
+{
+  "horizons": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "engineered_climate": [
+    "rain_cum2",
+    "rain_cum4",
+    "rain_cum8",
+    "rain_anom",
+    "spi4",
+    "spi8",
+    "t2m_anom"
+  ],
+  "n_common_test_keys": 53498,
+  "metrics": [
+    {
+      "model": "rf",
+      "tag": "baseline",
+      "region": "national",
+      "h": 1,
+      "n": 13647,
+      "rmse": 2.2714912177243183,
+      "mase": 1.0198305898282611,
+      "nse_med": -0.18309718229329563
+    },
+    {
+      "model": "rf",
+      "tag": "baseline",
+      "region": "igp",
+      "h": 1,
+      "n": 940,
+      "rmse": 1.6612936896170274,
+      "mase": 1.2370953212008002,
+      "nse_med": -1.0141626761762406
+    },
+    {
+      "model": "rf",
+      "tag": "augmented",
+      "region": "national",
+      "h": 1,
+      "n": 13647,
+      "rmse": 2.277119564334656,
+      "mase": 1.0261628957758737,
+      "nse_med": -0.18878872400265778
+    },
+    {
+      "model": "rf",
+      "tag": "augmented",
+      "region": "igp",
+      "h": 1,
+      "n": 940,
+      "rmse": 1.665497135838478,
+      "mase": 1.2411062923680485,
+      "nse_med": -0.9016506697485112
+    },
+    {
+      "model": "rf",
+      "tag": "baseline",
+      "region": "national",
+      "h": 2,
+      "n": 12331,
+      "rmse": 2.473784108574159,
+      "mase": 1.0994482666358256,
+      "nse_med": -0.15438694050237944
+    },
+    {
+      "model": "rf",
+      "tag": "baseline",
+      "region": "igp",
+      "h": 2,
+      "n": 963,
+      "rmse": 1.9260357104346706,
+      "mase": 1.4096726092007503,
+      "nse_med": -0.6804469348386084
+    },
+    {
+      "model": "rf",
+      "tag": "augmented",
+      "region": "national",
+      "h": 2,
+      "n": 12331,
+      "rmse": 2.4829257597827756,
+      "mase": 1.1007925874610767,
+      "nse_med": -0.16372155735471705
+    },
+    {
+      "model": "rf",
+      "tag": "augmented",
+      "region": "igp",
+      "h": 2,
+      "n": 963,
+      "rmse": 1.9420812120125015,
+      "mase": 1.4088798426020286,
+      "nse_med": -0.6436552092488301
+    },
+    {
+      "model": "rf",
+      "tag": "baseline",
+      "region": "national",
+      "h": 3,
+      "n": 10954,
+      "rmse": 2.6085859776860794,
+      "mase": 1.1060157277960405,
+      "nse_med": -0.3382907825655168
+    },
+    {
+      "model": "rf",
+      "tag": "baseline",
+      "region": "igp",
+      "h": 3,
+      "n": 777,
+      "rmse": 1.858202252970214,
+      "mase": 1.3190937949994432,
+      "nse_med": -0.9132336309357096
+    },
+    {
+      "model": "rf",
+      "tag": "augmented",
+      "region": "national",
+      "h": 3,
+      "n": 10954,
+      "rmse": 2.6080346215147596,
+      "mase": 1.105665035898086,
+      "nse_med": -0.32772791539442025
+    },
+    {
+      "model": "rf",
+      "tag": "augmented",
+      "region": "igp",
+      "h": 3,
+      "n": 777,
+      "rmse": 1.8823393878179722,
+      "mase": 1.3336341852330345,
+      "nse_med": -0.9480984552605431
+    },
+    {
+      "model": "rf",
+      "tag": "baseline",
+      "region": "national",
+      "h": 4,
+      "n": 16566,
+      "rmse": 2.7027661768168856,
+      "mase": 1.1373750162662608,
+      "nse_med": -0.3143154794270737
+    },
+    {
+      "model": "rf",
+      "tag": "baseline",
+      "region": "igp",
+      "h": 4,
+      "n": 1225,
+      "rmse": 2.149236358800392,
+      "mase": 1.4197323526730372,
+      "nse_med": -0.7759960170356046
+    },
+    {
+      "model": "rf",
+      "tag": "augmented",
+      "region": "national",
+      "h": 4,
+      "n": 16566,
+      "rmse": 2.7112365983739797,
+      "mase": 1.1409011362632218,
+      "nse_med": -0.31049483764470664
+    },
+    {
+      "model": "rf",
+      "tag": "augmented",
+      "region": "igp",
+      "h": 4,
+      "n": 1225,
+      "rmse": 2.213913031920012,
+      "mase": 1.446633743982475,
+      "nse_med": -0.7978129086761435
+    },
+    {
+      "model": "xgb",
+      "tag": "baseline",
+      "region": "national",
+      "h": 1,
+      "n": 13647,
+      "rmse": 2.523640489515612,
+      "mase": 1.1089315960359705,
+      "nse_med": -0.321844308289001
+    },
+    {
+      "model": "xgb",
+      "tag": "baseline",
+      "region": "igp",
+      "h": 1,
+      "n": 940,
+      "rmse": 3.074122035865942,
+      "mase": 1.6938950856281345,
+      "nse_med": -2.3570376754924087
+    },
+    {
+      "model": "xgb",
+      "tag": "augmented",
+      "region": "national",
+      "h": 1,
+      "n": 13647,
+      "rmse": 2.4441748712045626,
+      "mase": 1.1388350687259061,
+      "nse_med": -0.3475304493349227
+    },
+    {
+      "model": "xgb",
+      "tag": "augmented",
+      "region": "igp",
+      "h": 1,
+      "n": 940,
+      "rmse": 2.659759998093818,
+      "mase": 1.7015396237862919,
+      "nse_med": -2.6619740380440615
+    },
+    {
+      "model": "xgb",
+      "tag": "baseline",
+      "region": "national",
+      "h": 2,
+      "n": 12331,
+      "rmse": 2.746062947266093,
+      "mase": 1.1956572163731056,
+      "nse_med": -0.3364361133668998
+    },
+    {
+      "model": "xgb",
+      "tag": "baseline",
+      "region": "igp",
+      "h": 2,
+      "n": 963,
+      "rmse": 2.85269803070201,
+      "mase": 1.7032682229430076,
+      "nse_med": -1.4818715227481563
+    },
+    {
+      "model": "xgb",
+      "tag": "augmented",
+      "region": "national",
+      "h": 2,
+      "n": 12331,
+      "rmse": 2.736519020804208,
+      "mase": 1.2598013919677773,
+      "nse_med": -0.43850790941258655
+    },
+    {
+      "model": "xgb",
+      "tag": "augmented",
+      "region": "igp",
+      "h": 2,
+      "n": 963,
+      "rmse": 2.769895919171965,
+      "mase": 1.7626142963920737,
+      "nse_med": -1.5185439827922353
+    },
+    {
+      "model": "xgb",
+      "tag": "baseline",
+      "region": "national",
+      "h": 3,
+      "n": 10954,
+      "rmse": 2.917873482171198,
+      "mase": 1.2656604059470242,
+      "nse_med": -0.6125309613719498
+    },
+    {
+      "model": "xgb",
+      "tag": "baseline",
+      "region": "igp",
+      "h": 3,
+      "n": 777,
+      "rmse": 2.838552230370425,
+      "mase": 1.886980060761681,
+      "nse_med": -1.9330267177484401
+    },
+    {
+      "model": "xgb",
+      "tag": "augmented",
+      "region": "national",
+      "h": 3,
+      "n": 10954,
+      "rmse": 2.9246228626883997,
+      "mase": 1.3720794224494874,
+      "nse_med": -0.7861296223976914
+    },
+    {
+      "model": "xgb",
+      "tag": "augmented",
+      "region": "igp",
+      "h": 3,
+      "n": 777,
+      "rmse": 3.1008628870137724,
+      "mase": 2.255741940173128,
+      "nse_med": -2.6506601002601693
+    },
+    {
+      "model": "xgb",
+      "tag": "baseline",
+      "region": "national",
+      "h": 4,
+      "n": 16566,
+      "rmse": 2.903749174994213,
+      "mase": 1.261351207774393,
+      "nse_med": -0.5333848352038396
+    },
+    {
+      "model": "xgb",
+      "tag": "baseline",
+      "region": "igp",
+      "h": 4,
+      "n": 1225,
+      "rmse": 2.7704845148065558,
+      "mase": 1.8875626209546466,
+      "nse_med": -1.9182969411517872
+    },
+    {
+      "model": "xgb",
+      "tag": "augmented",
+      "region": "national",
+      "h": 4,
+      "n": 16566,
+      "rmse": 2.9191070792986915,
+      "mase": 1.2952867943205493,
+      "nse_med": -0.6109836265120185
+    },
+    {
+      "model": "xgb",
+      "tag": "augmented",
+      "region": "igp",
+      "h": 4,
+      "n": 1225,
+      "rmse": 2.8398181782177527,
+      "mase": 1.8459393118164535,
+      "nse_med": -2.017166771514476
+    }
+  ],
+  "rmse_delta": [
+    {
+      "model": "rf",
+      "region": "igp",
+      "h": 1,
+      "augmented": 1.665497135838478,
+      "baseline": 1.6612936896170274,
+      "delta_rmse": 0.004203446221450635,
+      "delta_pct": 0.25302246362108566
+    },
+    {
+      "model": "rf",
+      "region": "igp",
+      "h": 2,
+      "augmented": 1.9420812120125015,
+      "baseline": 1.9260357104346706,
+      "delta_rmse": 0.016045501577830912,
+      "delta_pct": 0.8330843239770326
+    },
+    {
+      "model": "rf",
+      "region": "igp",
+      "h": 3,
+      "augmented": 1.8823393878179722,
+      "baseline": 1.858202252970214,
+      "delta_rmse": 0.024137134847758146,
+      "delta_pct": 1.2989508977925586
+    },
+    {
+      "model": "rf",
+      "region": "igp",
+      "h": 4,
+      "augmented": 2.213913031920012,
+      "baseline": 2.149236358800392,
+      "delta_rmse": 0.06467667311962,
+      "delta_pct": 3.009286198550988
+    },
+    {
+      "model": "rf",
+      "region": "national",
+      "h": 1,
+      "augmented": 2.277119564334656,
+      "baseline": 2.2714912177243183,
+      "delta_rmse": 0.005628346610337509,
+      "delta_pct": 0.24778201062015281
+    },
+    {
+      "model": "rf",
+      "region": "national",
+      "h": 2,
+      "augmented": 2.4829257597827756,
+      "baseline": 2.473784108574159,
+      "delta_rmse": 0.00914165120861643,
+      "delta_pct": 0.36954118902014854
+    },
+    {
+      "model": "rf",
+      "region": "national",
+      "h": 3,
+      "augmented": 2.6080346215147596,
+      "baseline": 2.6085859776860794,
+      "delta_rmse": -0.000551356171319739,
+      "delta_pct": -0.021136208506679705
+    },
+    {
+      "model": "rf",
+      "region": "national",
+      "h": 4,
+      "augmented": 2.7112365983739797,
+      "baseline": 2.7027661768168856,
+      "delta_rmse": 0.008470421557094099,
+      "delta_pct": 0.31339823732254646
+    },
+    {
+      "model": "xgb",
+      "region": "igp",
+      "h": 1,
+      "augmented": 2.659759998093818,
+      "baseline": 3.074122035865942,
+      "delta_rmse": -0.41436203777212377,
+      "delta_pct": -13.479036711546916
+    },
+    {
+      "model": "xgb",
+      "region": "igp",
+      "h": 2,
+      "augmented": 2.769895919171965,
+      "baseline": 2.85269803070201,
+      "delta_rmse": -0.0828021115300448,
+      "delta_pct": -2.9025894307386024
+    },
+    {
+      "model": "xgb",
+      "region": "igp",
+      "h": 3,
+      "augmented": 3.1008628870137724,
+      "baseline": 2.838552230370425,
+      "delta_rmse": 0.2623106566433475,
+      "delta_pct": 9.24100158654176
+    },
+    {
+      "model": "xgb",
+      "region": "igp",
+      "h": 4,
+      "augmented": 2.8398181782177527,
+      "baseline": 2.7704845148065558,
+      "delta_rmse": 0.06933366341119696,
+      "delta_pct": 2.5025826002870857
+    },
+    {
+      "model": "xgb",
+      "region": "national",
+      "h": 1,
+      "augmented": 2.4441748712045626,
+      "baseline": 2.523640489515612,
+      "delta_rmse": -0.07946561831104937,
+      "delta_pct": -3.148848603483217
+    },
+    {
+      "model": "xgb",
+      "region": "national",
+      "h": 2,
+      "augmented": 2.736519020804208,
+      "baseline": 2.746062947266093,
+      "delta_rmse": -0.009543926461884844,
+      "delta_pct": -0.34754944242580177
+    },
+    {
+      "model": "xgb",
+      "region": "national",
+      "h": 3,
+      "augmented": 2.9246228626883997,
+      "baseline": 2.917873482171198,
+      "delta_rmse": 0.006749380517201864,
+      "delta_pct": 0.23131162329148114
+    },
+    {
+      "model": "xgb",
+      "region": "national",
+      "h": 4,
+      "augmented": 2.9191070792986915,
+      "baseline": 2.903749174994213,
+      "delta_rmse": 0.015357904304478698,
+      "delta_pct": 0.5288991362178969
+    }
+  ],
+  "shap_family_shares_rf_aug": [
+    {
+      "model": "rf_aug",
+      "region": "national",
+      "h": 1,
+      "static": 0.02765101609987183,
+      "autoregressive": 0.7965528265410173,
+      "seasonal": 0.1039589752654365,
+      "covariate": 0.0478605003672226,
+      "engineered_climate": 0.023976681726451805
+    },
+    {
+      "model": "rf_aug",
+      "region": "national",
+      "h": 2,
+      "static": 0.041364484306961886,
+      "autoregressive": 0.8439066669607522,
+      "seasonal": 0.056874931256259566,
+      "covariate": 0.02996495757032213,
+      "engineered_climate": 0.0278889599057041
+    },
+    {
+      "model": "rf_aug",
+      "region": "national",
+      "h": 3,
+      "static": 0.04832147165339418,
+      "autoregressive": 0.8625777252413684,
+      "seasonal": 0.02324060526025937,
+      "covariate": 0.03794747431990844,
+      "engineered_climate": 0.027912723525069582
+    },
+    {
+      "model": "rf_aug",
+      "region": "national",
+      "h": 4,
+      "static": 0.04176753053086666,
+      "autoregressive": 0.8512178996360946,
+      "seasonal": 0.04432838130581781,
+      "covariate": 0.03340724771678048,
+      "engineered_climate": 0.02927894081044048
+    }
+  ],
+  "elapsed_sec": 1390.9
+}

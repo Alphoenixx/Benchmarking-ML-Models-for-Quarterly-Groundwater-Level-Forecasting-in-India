@@ -1,0 +1,5 @@
+15:26:30 | INFO | Logger started -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\logs\cycle13_20260704_152630.log
+15:26:30 | INFO | benchmark national: parsed 64 rows from comparison_common_national_v3.csv
+15:26:30 | INFO | benchmark igp: parsed 64 rows from comparison_common_igp_v3.csv
+15:26:30 | INFO | numbers.json written: 266 keys, 0 missing sources
+15:26:31 | INFO | DONE in 0.3s -> outputs/publication/

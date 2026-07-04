@@ -1,0 +1,135 @@
+02:37:55 | INFO | Logger started -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\logs\cycle2_20260704_023755.log
+02:37:55 | INFO | Platform: Windows-11-10.0.26200-SP0 | Python 3.13.5
+02:37:55 | INFO | START: load parquet
+02:37:55 | INFO | loaded (416952, 15)
+02:37:55 | INFO | END:   load parquet (0.10s)
+02:37:55 | INFO | START: DIAGNOSTICS
+02:37:55 | INFO | EXACT COLUMNS: ["'time_idx'", "'station_id'", "'datetime'", "'target'", "'rainfall'", "'t  kmnpnn]2m'", "'t2m_max'", "'t2m_min'", "'month'", "'latitude'", "'longitude'", "'wellDepth'", "'wellAquiferType_encoded'", "'State_encoded'", "'District_encoded'"]
+02:37:55 | INFO | START: parse datetime
+02:37:55 | INFO | unparseable dates: 0
+02:37:55 | INFO | END:   parse datetime (0.15s)
+02:37:55 | INFO | target_stats: {'min': -2014.79, 'p05': -26.851899999999993, 'median': 2.37, 'mean': -0.2378296369556903, 'p95': 19.27, 'max': 2430.87}
+02:37:55 | INFO | START: decode states
+02:37:55 | INFO | state_decode: {
+  "0": {
+    "guess": "Andhra Pradesh",
+    "centroid": [
+      16.351,
+      80.357
+    ],
+    "rows": 16496
+  },
+  "1": {
+    "guess": "Madhya Pradesh",
+    "centroid": [
+      21.746,
+      79.038
+    ],
+    "rows": 400456
+  }
+}
+02:37:55 | INFO | END:   decode states (0.02s)
+02:37:55 | INFO | REGION: 51513 rows, 975 wells in IGP bbox
+02:37:55 | INFO | START: profile all
+02:37:57 | INFO | [all] wells=6440 | count: median=39 p90=116 max=439 | span_days: median=3645 max=11352 | median_gap: median=92.0
+02:37:57 | INFO | END:   profile all (1.95s)
+02:37:57 | INFO | START: profile region
+02:37:57 | INFO | [region] wells=975 | count: median=27 p90=115 max=402 | span_days: median=2763 max=10962 | median_gap: median=97.0
+02:37:57 | INFO | END:   profile region (0.29s)
+02:37:57 | INFO | region_cohort_grid: {
+  "rows>=180&span>=365d": 19,
+  "rows>=180&span>=730d": 2,
+  "rows>=180&span>=1095d": 0,
+  "rows>=365&span>=365d": 8,
+  "rows>=365&span>=730d": 1,
+  "rows>=365&span>=1095d": 0,
+  "rows>=730&span>=365d": 0,
+  "rows>=730&span>=730d": 0,
+  "rows>=730&span>=1095d": 0,
+  "rows>=1095&span>=365d": 0,
+  "rows>=1095&span>=730d": 0,
+  "rows>=1095&span>=1095d": 0
+}
+02:37:57 | INFO | START: monthly feasibility
+02:37:59 | INFO | region_monthly_points: {'median': 14.0, 'p90': 84.0, 'max': 115, 'wells_ge_24mo': 366, 'wells_ge_36mo': 275}
+02:37:59 | INFO | END:   monthly feasibility (1.47s)
+02:38:00 | INFO | region depletion slope = -0.1557 m/yr
+02:38:00 | INFO | END:   DIAGNOSTICS (4.88s)
+02:38:00 | INFO | WROTE cycle2_summary.json:
+{
+  "columns": [
+    "time_idx",
+    "station_id",
+    "datetime",
+    "target",
+    "rainfall",
+    "t  kmnpnn]2m",
+    "t2m_max",
+    "t2m_min",
+    "month",
+    "latitude",
+    "longitude",
+    "wellDepth",
+    "wellAquiferType_encoded",
+    "State_encoded",
+    "District_encoded"
+  ],
+  "unparseable_dates": 0,
+  "target_stats": {
+    "min": -2014.79,
+    "p05": -26.851899999999993,
+    "median": 2.37,
+    "mean": -0.2378296369556903,
+    "p95": 19.27,
+    "max": 2430.87
+  },
+  "state_decode": {
+    "0": {
+      "guess": "Andhra Pradesh",
+      "centroid": [
+        16.351,
+        80.357
+      ],
+      "rows": 16496
+    },
+    "1": {
+      "guess": "Madhya Pradesh",
+      "centroid": [
+        21.746,
+        79.038
+      ],
+      "rows": 400456
+    }
+  },
+  "region_bbox": {
+    "lat_min": 27.5,
+    "lat_max": 32.5,
+    "lon_min": 73.5,
+    "lon_max": 81.0
+  },
+  "region_rows": 51513,
+  "region_wells": 975,
+  "region_cohort_grid": {
+    "rows>=180&span>=365d": 19,
+    "rows>=180&span>=730d": 2,
+    "rows>=180&span>=1095d": 0,
+    "rows>=365&span>=365d": 8,
+    "rows>=365&span>=730d": 1,
+    "rows>=365&span>=1095d": 0,
+    "rows>=730&span>=365d": 0,
+    "rows>=730&span>=730d": 0,
+    "rows>=730&span>=1095d": 0,
+    "rows>=1095&span>=365d": 0,
+    "rows>=1095&span>=730d": 0,
+    "rows>=1095&span>=1095d": 0
+  },
+  "region_monthly_points": {
+    "median": 14.0,
+    "p90": 84.0,
+    "max": 115,
+    "wells_ge_24mo": 366,
+    "wells_ge_36mo": 275
+  },
+  "region_depletion_slope_m_per_yr": -0.15574406348900663
+}
+02:38:00 | INFO | CYCLE 2 COMPLETE

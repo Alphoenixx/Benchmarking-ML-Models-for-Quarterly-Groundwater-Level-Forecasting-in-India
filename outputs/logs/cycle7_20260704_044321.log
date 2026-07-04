@@ -1,0 +1,6 @@
+04:43:21 | INFO | Logger started -> D:\PAPER\GroundWater Level Forcasting in Indo Gangetic Plain\gwl-forecast\outputs\logs\cycle7_20260704_044321.log
+04:45:18 | INFO | baseline preds (409407, 8) | tree preds (243558, 8)
+04:45:28 | INFO | Loaded Chronos model: amazon/chronos-2
+04:46:08 | INFO | Chronos: 44725 unique contexts, 103084 target rows
+04:46:08 | INFO | START: chronos inference
+04:52:01 | INFO | END:   chronos inference (353.29s)
